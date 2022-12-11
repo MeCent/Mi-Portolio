@@ -15,6 +15,13 @@ import { FormacionComponent } from './formacion/formacion.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
+import { EditBannerComponent } from './panel-control/edit-banner/edit-banner.component';
+import { EditExperienciaComponent } from './panel-control/edit-experiencia/edit-experiencia.component';
+import { EditEducacionComponent } from './panel-control/edit-educacion/edit-educacion.component';
+import { EditHabilidadesComponent } from './panel-control/edit-habilidades/edit-habilidades.component';
+import { EditProyectosComponent } from './panel-control/edit-proyectos/edit-proyectos.component';
+import { EditInfoComponent } from './panel-control/edit-info/edit-info.component';
+import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,14 @@ import { FooterComponent } from './footer/footer.component';
     FormacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    EditBannerComponent,
+    EditExperienciaComponent,
+    EditEducacionComponent,
+    EditHabilidadesComponent,
+    EditProyectosComponent,
+    EditInfoComponent,
+    EditRedesComponent
   ],
   imports: [
     BrowserModule,
