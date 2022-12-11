@@ -10,6 +10,11 @@ import { ErrorComponent } from './error/error.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PanelControlComponent } from './panel-control/panel-control.component';
 import { BannerComponent } from './banner/banner.component';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
+import { FormacionComponent } from './formacion/formacion.component';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { BannerComponent } from './banner/banner.component';
     ErrorComponent,
     RegistroComponent,
     PanelControlComponent,
-    BannerComponent
+    BannerComponent,
+    ExperienciaComponent,
+    FormacionComponent,
+    HabilidadesComponent,
+    ProyectosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
