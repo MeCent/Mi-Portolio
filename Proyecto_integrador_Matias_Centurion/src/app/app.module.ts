@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PanelControlComponent } from './panel-control/panel-control.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PanelControlComponent } from './panel-control/panel-control.component';
     LoginComponent,
     ErrorComponent,
     RegistroComponent,
-    PanelControlComponent
+    PanelControlComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
