@@ -1,0 +1,13 @@
+.bg-negro {
+    background-color: #000000;
+}
+.list-group {
+    --bs-list-group-bg: transparent;
+}
+
+.list-group-item  i:hover {
+    color:#0072b1 !important;
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
