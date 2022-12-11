@@ -7,6 +7,8 @@ import { IndexComponent } from './index/index.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
+import { RegistroComponent } from './registro/registro.component';
+import { PanelControlComponent } from './panel-control/panel-control.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ErrorComponent } from './error/error.component';
     IndexComponent,
     NavbarComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    RegistroComponent,
+    PanelControlComponent
   ],
   imports: [
     BrowserModule,
