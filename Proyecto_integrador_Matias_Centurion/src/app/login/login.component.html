@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<!-- Login -->
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8 login">
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div id="emailHelp" class="form-text text-white">Ingrese 8 o más caractéres.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary">Ingresar</button>
+                <!--<a class="btn btn-primary ms-3" routerLink="/panel-control" role="button">Ingresar</a>-->
+                <a class="btn btn-secondary ms-3" routerLink="/registro" role="button">Registrarse</a>
+            </div>
+        </div>
+        <div class="col-2">
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
