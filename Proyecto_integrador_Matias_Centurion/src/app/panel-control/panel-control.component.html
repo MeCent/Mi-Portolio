@@ -1,28 +1,26 @@
 <!-- Panel de Control-->
-<main>
-    <div class="row">
-        <!-- Barra lateral-->
-        <div class="col-3">
-            <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="fa-solid fa-user-pen"></i>Info</a>
-                <a class="list-group-item list-group-item-action" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes"><i class="fa-solid fa-share-nodes"></i>Redes</a>
-                <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner"><i class="fa-solid fa-image"></i>Banner</a>
-                <a class="list-group-item list-group-item-action" id="list-trabajo-list" data-bs-toggle="list" href="#list-trabajo" role="tab" aria-controls="list-trabajo"><i class="fa-solid fa-briefcase"></i>Trabajo</a>
-                <a class="list-group-item list-group-item-action" id="list-educacion-list" data-bs-toggle="list" href="#list-educacion" role="tab" aria-controls="list-educacion"><i class="fa-solid fa-diploma"></i>Educación</a>
-                <a class="list-group-item list-group-item-action" id="list-habilidades-list" data-bs-toggle="list" href="#list-habilidades" role="tab" aria-controls="list-habilidades"><i class="fa-solid fa-laptop-code"></i>Habilidades</a>
-                <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos"><i class="fa-solid fa-laptop-file"></i>Proyectos</a>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="tab-content" id="nav-tabContent">
-                <app-edit-info></app-edit-info>
-                <app-edit-redes></app-edit-redes>
-                <app-edit-banner></app-edit-banner>
-                <app-edit-experiencia></app-edit-experiencia>
-                <app-edit-educacion></app-edit-educacion>
-                <app-edit-habilidades></app-edit-habilidades>
-                <app-edit-proyectos></app-edit-proyectos>
-            </div>
+<div class="row">
+    <!-- Barra lateral-->
+    <div class="col-3">
+        <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="fa-solid fa-user-pen"></i>Info</a>
+            <a class="list-group-item list-group-item-action" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes"><i class="fa-solid fa-share-nodes"></i>Redes</a>
+            <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner"><i class="fa-solid fa-image"></i>Banner</a>
+            <a class="list-group-item list-group-item-action" id="list-trabajo-list" data-bs-toggle="list" href="#list-trabajo" role="tab" aria-controls="list-trabajo"><i class="fa-solid fa-briefcase"></i>Trabajo</a>
+            <a class="list-group-item list-group-item-action" id="list-educacion-list" data-bs-toggle="list" href="#list-educacion" role="tab" aria-controls="list-educacion"><i class="fa-solid fa-diploma"></i>Educación</a>
+            <a class="list-group-item list-group-item-action" id="list-habilidades-list" data-bs-toggle="list" href="#list-habilidades" role="tab" aria-controls="list-habilidades"><i class="fa-solid fa-laptop-code"></i>Habilidades</a>
+            <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos"><i class="fa-solid fa-laptop-file"></i>Proyectos</a>
         </div>
     </div>
-</main>
+    <div class="col-9">
+        <div class="tab-content" id="nav-tabContent">
+            <app-edit-info></app-edit-info>
+            <app-edit-redes></app-edit-redes>
+            <app-edit-banner></app-edit-banner>
+            <app-edit-experiencia></app-edit-experiencia>
+            <app-edit-educacion></app-edit-educacion>
+            <app-edit-habilidades></app-edit-habilidades>
+            <app-edit-proyectos></app-edit-proyectos>
+        </div>
+    </div>
+</div>
