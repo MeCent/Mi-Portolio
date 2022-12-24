@@ -44,7 +44,7 @@ import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.compon
     EditHabilidadesComponent,
     EditProyectosComponent,
     EditInfoComponent,
-    EditRedesComponent
+    EditRedesComponent,
   ],
   imports: [
     BrowserModule,
