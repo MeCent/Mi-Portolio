@@ -22,6 +22,8 @@ import { EditHabilidadesComponent } from './panel-control/edit-habilidades/edit-
 import { EditProyectosComponent } from './panel-control/edit-proyectos/edit-proyectos.component';
 import { EditInfoComponent } from './panel-control/edit-info/edit-info.component';
 import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.component';
+import { PortfolioService } from './servicios/portfolio.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,9 +50,10 @@ import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
