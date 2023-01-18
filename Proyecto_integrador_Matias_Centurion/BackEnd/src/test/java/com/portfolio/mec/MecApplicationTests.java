@@ -1,10 +1,10 @@
-package com.portfolio.mc;
+package com.portfolio.mec;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class McApplicationTests {
+@SpringBootTest(classes = MecApplicationTests.class)
+class MecApplicationTests {
 
 	@Test
 	void contextLoads() {
