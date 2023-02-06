@@ -1,14 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "Mi-Portolio",
-			"path": "../../../../.."
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Argentina_Programa",
-		"git.ignoreLimitWarning": true,
-		"java.compile.nullAnalysis.mode": "automatic",
-		"java.configuration.updateBuildConfiguration": "interactive"
-	}
+    "folders": [
+        {
+            "path": "../../../.."
+        }
+    ]
 }
