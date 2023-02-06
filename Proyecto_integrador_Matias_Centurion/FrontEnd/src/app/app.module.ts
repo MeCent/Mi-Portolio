@@ -23,6 +23,7 @@ import { EditProyectosComponent } from './panel-control/edit-proyectos/edit-proy
 import { EditInfoComponent } from './panel-control/edit-info/edit-info.component';
 import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

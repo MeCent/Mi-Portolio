@@ -5,10 +5,10 @@
         </div>
         <div class="col-8 login">
             <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                    <div class="mb-3">  <!-- hasta aca 3:17-->
+                        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                        <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" required/>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
