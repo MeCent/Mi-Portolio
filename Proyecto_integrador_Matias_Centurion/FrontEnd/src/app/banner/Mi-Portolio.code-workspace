@@ -2,6 +2,9 @@
     "folders": [
         {
             "path": "../../../.."
+        },
+        {
+            "path": "../../../../../../../Documents/PROGRAMACIÓN/Argentina_Programa/FrontEnd-MGB"
         }
     ]
 }
