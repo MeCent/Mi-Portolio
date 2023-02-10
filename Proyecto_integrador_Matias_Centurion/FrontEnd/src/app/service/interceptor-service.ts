@@ -1,3 +1,7 @@
+import { HttpEvent, HttpHandler, HttpRequest } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { TokenService } from "./token.service";
+
 export class InterceptorService {
     constructor(private tokenService: TokenService){}
 
