@@ -24,6 +24,7 @@ import { EditInfoComponent } from './panel-control/edit-info/edit-info.component
 import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { intercetorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,9 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    intercetorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
