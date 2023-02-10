@@ -9,7 +9,8 @@
             <li class="list-group-item"><a href="https://www.facebook.com/m.e.centurion/" target = "_blank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>
             <li class="list-group-item"><a href="https://github.com/MeCent" target = "_blank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
             <li class="list-group-item"> <!-- Login -->
-                <a routerLink="/login"><i class="fa-solid fa-right-to-bracket fa-2x text-white"></i></a>
+                <button type="button" (click)="login()" *ngIf="!isLogged"><i class="fa-solid fa-right-to-bracket fa-2x text-white"></i></button>
+                <button type="button" (click)="onLogOut()" *ngIf="isLogged"><i class="fa-solid fa-right-from-bracket fa-2x text-white"></i></button>
             </li>
         </ul>
     </div>

@@ -3,8 +3,14 @@
 .bg-negro {
     background-color: #000000;
 }
+
 .list-group {
     --bs-list-group-bg: transparent;
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }
 
 .list-group-item  i:hover {
