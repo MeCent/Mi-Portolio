@@ -25,6 +25,7 @@ import { EditRedesComponent } from './panel-control/edit-redes/edit-redes.compon
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { intercetorProvider } from './service/interceptor-service';
+import { NewExperiienciaComponent } from './experiencia/new-experiiencia.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { intercetorProvider } from './service/interceptor-service';
     EditProyectosComponent,
     EditInfoComponent,
     EditRedesComponent,
+    NewExperiienciaComponent,
   ],
   imports: [
     BrowserModule,
