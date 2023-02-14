@@ -6,9 +6,14 @@
         </div>
         <div class="row p-2">
             <div class="col-2">
+                <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                    Nueva Experiencia
+                </button>
+            </div>
+            <div class="col-2">
                 <img src="assets/img/CEMIC.png" alt="CEMIC" class="img-fluid w-100">
             </div>
-            <div class="col-10 descripcion">
+            <div class="col-8 descripcion">
                 <h2>CEMIC</h2>
                 <h2>Base de Datos de Documentación</h2>
                 <h5>2019 - Actualidad</h5>
