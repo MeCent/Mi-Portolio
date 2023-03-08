@@ -8,14 +8,17 @@
             <div class="col-2">
                 <img src="assets/img/CEMIC.png" alt="CEMIC" class="img-fluid w-100">
             </div>
-            <div class="col-9 descripcion">
-                <h2>CEMIC</h2>
-                <h2>Base de Datos de Documentación</h2>
+            <div class="col-9 descripcion" *ngFor="let Experiencia of expe">
+                <h2>{{Experiencia.nombreE}}</h2>
+                <h2>{{Experiencia.descripcionE}</h2>
                 <h5>2019 - Actualidad</h5>
             </div>
             <div class="col-1">
                 <button type="button" class="btn btn-dark" title="Agregar Experiencia" routerLink="/nuevaexp" *ngIf="isLogged">
                     <i class="fa-solid fa-plus"></i>
+                </button>
+                <button type="button" class="btn btn-dark" title="Editar Experiencia" routerLink="/nuevaexp" *ngIf="isLogged">
+                    <i class="fa-solid fa-pen-to-square"></i>
                 </button>
             </div>
         </div>
