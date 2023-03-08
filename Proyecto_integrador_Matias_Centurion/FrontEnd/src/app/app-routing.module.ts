@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: '', component:IndexComponent },
   {path: 'login', component:LoginComponent },
   {path: 'nuevaexp', component:NewExperiienciaComponent},
-  {path: 'editexp', component:EditExperienciaComponent},
+  {path: 'editexp/:id', component:EditExperienciaComponent},
   {path: 'registro', component:RegistroComponent },
   {path: 'panel-control', component:PanelControlComponent },
   {path: '**', component:ErrorComponent },
