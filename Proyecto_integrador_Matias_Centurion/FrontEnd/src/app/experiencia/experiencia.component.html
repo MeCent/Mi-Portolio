@@ -20,6 +20,9 @@
                 <button type="button" class="btn btn-dark" title="Editar Experiencia" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </button>
+                <button type="button" class="btn btn-dark" title="Eliminar Experiencia" (click)="delete(Experiencia.id)" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
             </div>
         </div>
     </div>
