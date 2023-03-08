@@ -4,11 +4,11 @@
         <div class="row">
             <h3>Experiencia Laboral</h3>
         </div>
-        <div class="row p-2">
+        <div class="row p-2" *ngFor="let Experiencia of expe">
             <div class="col-2">
                 <img src="assets/img/CEMIC.png" alt="CEMIC" class="img-fluid w-100">
             </div>
-            <div class="col-9 descripcion" *ngFor="let Experiencia of expe">
+            <div class="col-9 descripcion">
                 <h2>{{Experiencia.nombreE}}</h2>
                 <h2>{{Experiencia.descripcionE}}</h2>
                 <h5>2019 - Actualidad</h5>
