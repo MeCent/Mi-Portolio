@@ -15,8 +15,8 @@
             <div class="col-10 descripcion" >
                 <ul>
                     <h2>{{Experiencia.nombreE}}</h2>
-                    <li>{{Experiencia.inicioE}}</li>
-                    <li>{{Experiencia.finE}}</li>
+                <!--<li>{{Experiencia.inicioE}}</li>
+                    <li>{{Experiencia.finE}}</li> -->
                     <li>{{Experiencia.descripcionE}}</li>
                 </ul>
 
@@ -25,7 +25,7 @@
                 <button type="button" class="btn btn-dark" title="Editar Experiencia" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </button>
-                <button type="button" class="btn btn-dark" title="Eliminar Experiencia" (click)="delete(Experiencia.id)" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+                <button type="button" class="btn btn-dark" title="Eliminar Experiencia" (click)="delete(Experiencia.id)" *ngIf="isLogged">
                     <i class="fa-solid fa-trash"></i>
                 </button>
             </div>
