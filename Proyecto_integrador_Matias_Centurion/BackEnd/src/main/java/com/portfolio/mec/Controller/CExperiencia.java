@@ -33,6 +33,24 @@ public class CExperiencia {
         return new ResponseEntity(list, HttpStatus.OK);
     }
 
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<Experiencia> getById(@PathVariable("id") int id) {
+        if (!sExperiencia.existsById(id)) {
+            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
+        }
+        Experiencia experiencia = sExperiencia.getOne(id).get();
+        return new ResponseEntity(experiencia, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable("id") int id) {
+        if (!sExperiencia.existsById(id)) {
+            return new ResponseEntity(new Mensaje("No existe"), HttpStatus.NOT_FOUND);
+        }
+        sExperiencia.delete(id);
+        return new ResponseEntity(new Mensaje("Experiencia eliminada"), HttpStatus.OK);
+    }
+
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoExperiencia dtoexp) {
         if (StringUtils.isBlank(dtoexp.getNombreE())) {
@@ -42,24 +60,10 @@ public class CExperiencia {
             return new ResponseEntity(new Mensaje("Experiencia existente"), HttpStatus.BAD_REQUEST);
         }
 
-        Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE());
+        Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getInicioE(), dtoexp.getFinE(), dtoexp.getDescripcionE());
         sExperiencia.save(experiencia);
 
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
-    }
-
-    @GetMapping("/detail/{id}")
-
-    public ResponseEntity<Experiencia> getById(@PathVariable("id") int id) {
-
-        if (!sExperiencia.existsById(id)) {
-            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
-        }
-
-        Experiencia experiencia = sExperiencia.getOne(id).get();
-
-        return new ResponseEntity(experiencia, HttpStatus.OK);
-
     }
 
     @PutMapping("/update/{id}")
@@ -80,15 +84,6 @@ public class CExperiencia {
 
         sExperiencia.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
-    }
-
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> delete(@PathVariable("id") int id) {
-        if (!sExperiencia.existsById(id)) {
-            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
-        }
-        sExperiencia.delete(id);
-        return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
     }
 
 }

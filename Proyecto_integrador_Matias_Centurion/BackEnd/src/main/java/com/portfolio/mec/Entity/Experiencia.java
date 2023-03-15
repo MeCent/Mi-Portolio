@@ -11,14 +11,18 @@ public class Experiencia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
+    private String inicioE;
+    private String finE;
     private String descripcionE;
     
     //Constructores
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE) {
+    public Experiencia(String nombreE, String inicioE, String finE, String descripcionE) {
         this.nombreE = nombreE;
+        this.inicioE = inicioE;
+        this.finE = finE;
         this.descripcionE = descripcionE;
     }
     
@@ -29,6 +33,22 @@ public class Experiencia {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getInicioE() {
+        return inicioE;
+    }
+
+    public void setInicioE(String inicioE) {
+        this.inicioE = inicioE;
+    }
+
+    public String getFinE() {
+        return finE;
+    }
+
+    public void setFinE(String finE) {
+        this.finE = finE;
     }
 
     public String getNombreE() {
