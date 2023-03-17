@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { intercetorProvider } from './service/interceptor-service';
 import { NewExperiienciaComponent } from './experiencia/new-experiiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './educacion/new-educacion.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { EditExperienciaComponent } from './experiencia/edit-experiencia.compone
     FooterComponent,
     NewExperiienciaComponent,
     EditExperienciaComponent,
+    NewEducacionComponent,
 
   ],
   imports: [
