@@ -10,7 +10,7 @@ import { ErrorComponent } from './error/error.component';
 import { RegistroComponent } from './registro/registro.component';
 import { BannerComponent } from './banner/banner.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
-import { FormacionComponent } from './formacion/formacion.component';
+import { EducacionComponent } from './educacion/educacion.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { intercetorProvider } from './service/interceptor-service';
 import { NewExperiienciaComponent } from './experiencia/new-experiiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
+
 
 @NgModule({
   declarations: [
@@ -30,12 +31,13 @@ import { EditExperienciaComponent } from './experiencia/edit-experiencia.compone
     RegistroComponent,
     BannerComponent,
     ExperienciaComponent,
-    FormacionComponent,
+    EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
     FooterComponent,
     NewExperiienciaComponent,
     EditExperienciaComponent,
+
   ],
   imports: [
     BrowserModule,
