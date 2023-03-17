@@ -20,6 +20,7 @@ import { intercetorProvider } from './service/interceptor-service';
 import { NewExperiienciaComponent } from './experiencia/new-experiiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './educacion/new-educacion.component';
+import { EditEducacionComponent } from './educacion/edit-educacion.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { NewEducacionComponent } from './educacion/new-educacion.component';
     NewExperiienciaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
+    EditEducacionComponent,
 
   ],
   imports: [
