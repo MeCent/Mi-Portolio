@@ -21,6 +21,8 @@ import { NewExperiienciaComponent } from './experiencia/new-experiiencia.compone
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './educacion/new-educacion.component';
 import { EditEducacionComponent } from './educacion/edit-educacion.component';
+import { EditHysComponent } from './hys/edit-hys.component';
+import { NewHysComponent } from './hys/new-hys.component';
 
 
 
@@ -42,6 +44,8 @@ import { EditEducacionComponent } from './educacion/edit-educacion.component';
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+    EditHysComponent,
+    NewHysComponent,
 
 
   ],
