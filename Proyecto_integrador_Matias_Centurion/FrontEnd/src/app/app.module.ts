@@ -11,7 +11,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { BannerComponent } from './banner/banner.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
-import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { HysComponent } from './hys/hys.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,6 +21,7 @@ import { NewExperiienciaComponent } from './experiencia/new-experiiencia.compone
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './educacion/new-educacion.component';
 import { EditEducacionComponent } from './educacion/edit-educacion.component';
+
 
 
 @NgModule({
@@ -34,13 +35,14 @@ import { EditEducacionComponent } from './educacion/edit-educacion.component';
     BannerComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HabilidadesComponent,
+    HysComponent,
     ProyectosComponent,
     FooterComponent,
     NewExperiienciaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+
 
   ],
   imports: [
