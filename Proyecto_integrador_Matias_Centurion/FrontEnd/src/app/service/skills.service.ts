@@ -7,7 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  URL = 'http://localhost:8080/hys/';
+  URL = 'http://localhost:8080/skill/';
 
   constructor(private httpClient: HttpClient) { }
 

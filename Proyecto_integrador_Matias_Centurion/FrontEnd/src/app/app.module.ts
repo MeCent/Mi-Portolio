@@ -23,6 +23,7 @@ import { NewEducacionComponent } from './educacion/new-educacion.component';
 import { EditEducacionComponent } from './educacion/edit-educacion.component';
 import { EditHysComponent } from './hys/edit-hys.component';
 import { NewHysComponent } from './hys/new-hys.component';
+import { ProgressbarComponent } from './progressbar/progressbar.component';
 
 
 
@@ -46,6 +47,7 @@ import { NewHysComponent } from './hys/new-hys.component';
     EditEducacionComponent,
     EditHysComponent,
     NewHysComponent,
+    ProgressbarComponent,
 
 
   ],

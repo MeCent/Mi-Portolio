@@ -5,6 +5,8 @@ import { NewEducacionComponent } from './educacion/new-educacion.component';
 import { ErrorComponent } from './error/error.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
 import { NewExperiienciaComponent } from './experiencia/new-experiiencia.component';
+import { EditHysComponent } from './hys/edit-hys.component';
+import { NewHysComponent } from './hys/new-hys.component';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
 
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path: 'editexp/:id', component:EditExperienciaComponent},
   {path: 'nuevaedu', component:NewEducacionComponent},
   {path: 'editedu/:id', component:EditEducacionComponent},
-  {path: 'registro', component:RegistroComponent },
+  {path: 'nuevahys', component:NewHysComponent},
+  {path: 'edithys/:id', component:EditHysComponent},
+  {path: 'registro', component:RegistroComponent},
   {path: '**', component:ErrorComponent },
 ];
 
