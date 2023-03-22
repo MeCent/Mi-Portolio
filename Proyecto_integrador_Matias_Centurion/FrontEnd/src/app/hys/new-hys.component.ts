@@ -22,9 +22,6 @@ export class NewHysComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    timer(1000, 100).subscribe(d => {
-          this.porcentaje = d;
-    })
   }
 
   onCreate(): void {
