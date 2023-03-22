@@ -12,10 +12,12 @@ import { NewHysComponent } from './hys/new-hys.component';
 import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
 import { NewProyectosComponent } from './proyectos/new-proyectos.component';
 import { RegistroComponent } from './registro/registro.component';
+import { EditBannerComponent } from './banner/edit-banner.component';
 
 const routes: Routes = [
   {path: '', component:IndexComponent },
   {path: 'login', component:LoginComponent },
+  {path: 'editinfo/:id', component:EditBannerComponent},
   {path: 'nuevaexp', component:NewExperiienciaComponent},
   {path: 'editexp/:id', component:EditExperienciaComponent},
   {path: 'nuevaedu', component:NewEducacionComponent},
