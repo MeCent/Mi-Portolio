@@ -11,7 +11,7 @@ import { TokenService } from '../service/token.service';
 })
 export class HysComponent implements OnInit {
   skill: Skills[] = [];
-  porcentaje: number = 0;
+  porcentaje: number;
   get style(){
     return 'width:' + this.porcentaje + '%'
   }

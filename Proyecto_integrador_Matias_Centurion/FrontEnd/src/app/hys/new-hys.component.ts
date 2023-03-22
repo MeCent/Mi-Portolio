@@ -11,7 +11,7 @@ import { SkillsService } from '../service/skills.service';
 })
 export class NewHysComponent implements OnInit {
   nombre: string;
-  porcentaje: number = 0;
+  porcentaje: number;
   get style(){
     return 'width:' + this.porcentaje + '%'
   }
@@ -23,9 +23,7 @@ export class NewHysComponent implements OnInit {
 
   ngOnInit(): void {
     timer(1000, 100).subscribe(d => {
-
           this.porcentaje = d;
-
     })
   }
 
