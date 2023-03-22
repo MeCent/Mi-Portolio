@@ -23,6 +23,8 @@ import { NewEducacionComponent } from './educacion/new-educacion.component';
 import { EditEducacionComponent } from './educacion/edit-educacion.component';
 import { EditHysComponent } from './hys/edit-hys.component';
 import { NewHysComponent } from './hys/new-hys.component';
+import { NewProyectosComponent } from './proyectos/new-proyectos.component';
+import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
 
 
 
@@ -46,6 +48,8 @@ import { NewHysComponent } from './hys/new-hys.component';
     EditEducacionComponent,
     EditHysComponent,
     NewHysComponent,
+    NewProyectosComponent,
+    EditProyectosComponent,
   ],
   imports: [
     BrowserModule,
