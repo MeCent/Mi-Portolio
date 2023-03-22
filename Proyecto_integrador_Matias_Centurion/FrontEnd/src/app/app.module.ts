@@ -25,6 +25,7 @@ import { EditHysComponent } from './hys/edit-hys.component';
 import { NewHysComponent } from './hys/new-hys.component';
 import { NewProyectosComponent } from './proyectos/new-proyectos.component';
 import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
+import { EditBannerComponent } from './banner/edit-banner.component';
 
 
 
@@ -50,6 +51,7 @@ import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
     NewHysComponent,
     NewProyectosComponent,
     EditProyectosComponent,
+    EditBannerComponent,
   ],
   imports: [
     BrowserModule,
