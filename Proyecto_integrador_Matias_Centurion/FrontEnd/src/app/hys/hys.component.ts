@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 import { Skills } from '../model/skills';
 import { SkillsService } from '../service/skills.service';
 import { TokenService } from '../service/token.service';
@@ -10,6 +11,10 @@ import { TokenService } from '../service/token.service';
 })
 export class HysComponent implements OnInit {
   skill: Skills[] = [];
+  porcentaje: number = 0;
+  get style(){
+    return 'width:' + this.porcentaje + '%'
+  }
 
   constructor(
     private skillsS: SkillsService,
@@ -25,6 +30,9 @@ export class HysComponent implements OnInit {
     } else {
       this.isLogged = false;
     }
+    timer(1000, 100).subscribe(d => {
+          this.porcentaje = d;
+    })
   }
 
   cargarSkills(): void {

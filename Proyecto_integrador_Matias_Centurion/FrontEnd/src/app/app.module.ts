@@ -55,7 +55,7 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     intercetorProvider
@@ -63,3 +63,4 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class YourAppModule {}

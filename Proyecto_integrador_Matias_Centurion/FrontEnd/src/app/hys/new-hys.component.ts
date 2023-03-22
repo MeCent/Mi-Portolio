@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { timer } from 'rxjs';
 import { Skills } from '../model/skills';
 import { SkillsService } from '../service/skills.service';
 
@@ -10,7 +11,10 @@ import { SkillsService } from '../service/skills.service';
 })
 export class NewHysComponent implements OnInit {
   nombre: string;
-  porcentaje: number;
+  porcentaje: number = 0;
+  get style(){
+    return 'width:' + this.porcentaje + '%'
+  }
 
   constructor(
     private skillsS: SkillsService,
@@ -18,6 +22,11 @@ export class NewHysComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    timer(1000, 100).subscribe(d => {
+
+          this.porcentaje = d;
+
+    })
   }
 
   onCreate(): void {
