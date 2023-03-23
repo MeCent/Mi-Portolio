@@ -39,7 +39,7 @@ public class SEducacion {
     }
     
     public boolean existByNombreEd(String nombreEd){
-        return rEducacion.existByNombreEd(nombreEd);
+        return rEducacion.existsByNombreEd(nombreEd);
     }
     
 }
