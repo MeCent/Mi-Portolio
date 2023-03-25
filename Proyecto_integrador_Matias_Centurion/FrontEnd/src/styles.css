@@ -25,3 +25,11 @@ h2 {
 h5 {
     font-size: 1vw;
 }
+
+.container {
+    background-color: rgb(202, 202, 202);
+}
+
+.btn-success{
+    padding: 3px;
+}
