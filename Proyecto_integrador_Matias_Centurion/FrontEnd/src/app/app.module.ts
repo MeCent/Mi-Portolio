@@ -26,6 +26,9 @@ import { NewHysComponent } from './hys/new-hys.component';
 import { NewProyectosComponent } from './proyectos/new-proyectos.component';
 import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
 import { EditBannerComponent } from './banner/edit-banner.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -58,6 +61,8 @@ import { EditBannerComponent } from './banner/edit-banner.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [
     intercetorProvider
