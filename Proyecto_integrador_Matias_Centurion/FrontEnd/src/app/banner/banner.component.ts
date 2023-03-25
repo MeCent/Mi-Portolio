@@ -20,7 +20,7 @@ export class BannerComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarPersona();
-    if(this.tokenService.getToken()){
+    if (this.tokenService.getToken()){
       this.isLogged = true;
     } else {
       this.isLogged = false;
@@ -28,7 +28,8 @@ export class BannerComponent implements OnInit {
   }
 
   cargarPersona() {
-    this.personaService.detail(1).subscribe(data =>
-      {this.persona = data} )
+    this.personaService.detail(1).subscribe(data =>{
+      this.persona = data
+    });
   }
 }
