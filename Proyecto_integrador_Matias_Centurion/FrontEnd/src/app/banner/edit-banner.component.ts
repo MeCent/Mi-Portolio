@@ -28,10 +28,9 @@ ngOnInit(): void {
     error: (err) => {
       alert("Error al modificar Información.");
       this.router.navigate(['']);
-    },
-  });
+    }
+  })
 }
-
 
 onUpdate(): void {
   const id = this.activatedRouter.snapshot.params['id'];
@@ -43,8 +42,8 @@ onUpdate(): void {
     error: (err) => {
       alert("Error al modificar Información");
       this.router.navigate(['']);
-    },
-  });
+    }
+  })
 }
 
 uploadImage($event: any) {
