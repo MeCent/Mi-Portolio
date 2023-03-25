@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from '../model/persona.model';
+import { ImageService } from '../service/image.service';
 import { PersonaService } from '../service/persona.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class EditBannerComponent implements OnInit {
   constructor(
     private personaS: PersonaService,
     private activatedRouter: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    public imageService: ImageService
   ){}
 
 ngOnInit(): void {
@@ -44,7 +46,9 @@ onUpdate(): void {
   });
 }
 
-uploadImage($event: any) {
-
+uploadImage($event: any,) {
+  const id = this.activatedRouter.snapshot.params['id'];
+  const name = "perfil_" + id;
+  this.imageService.uploadImage($event, name)
 }
 }
